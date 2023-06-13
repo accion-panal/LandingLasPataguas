@@ -67,20 +67,5 @@ const filterSelects = async () => {
             }
         }).join("");
     }
-
-
-
-        // regionText.addEventListener("change", async (data) => {
-        //     let aux = await getCommune(data.target.value);
-        //     document.getElementById("commune").innerHTML = aux.data.map((data) => 
-        //     `<option value="${data.id}">${data.name}</option>`
-        //     );
-        // }); 
-
-
-
-
-
-
 }
 filterSelects();
