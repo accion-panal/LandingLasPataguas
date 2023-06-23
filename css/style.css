@@ -630,7 +630,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   transition: .3s all ease;
   display: block;
   top: 0;
-  position: relative; }
+  position: relative;
+height: 100%; }
   .service-block .wrap-icon {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50px;
