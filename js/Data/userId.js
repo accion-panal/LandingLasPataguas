@@ -1,4 +1,4 @@
-export const PropertyData = {CodigoUsuarioMaestro: 0, companyId: 1, realtorId:0};
+export const PropertyData = {CodigoUsuarioMaestro: 10075, companyId: 10087, realtorId:0};
 
 
 export const RealtorSendEmailData = {
@@ -34,15 +34,15 @@ export const cardComments = {
         {
             id: 1,
             img:"images/perfilfemale.png",
-            author:'Karen Ormazába',
+            author:'Karen Ormazábal',
             subtitle:'Ingeniera Comercial',
-            comment:'Excelente servicio gloria y Marcela arrendaron mi depto en solo 3 días , ambas excelentes profesionales dedicadas y muy responsable'
+            comment:'Excelente servicio Gloria y Marcela arrendaron mi depto en solo 3 días , ambas excelentes profesionales dedicadas y muy responsable'
         },{
             id: 2,
             img:"images/perfilmale.png",
             author:'Ernst Joerger',
             subtitle:'Biólogo Marino y empresario',
-            comment:'Luego de años tratando de vender tierras en los campos de hielo Norte, la corredores Marcela y Gloria  logró hacer la venta y en forma muy ágil, desarrollo la documentación respectiva con total éxito, Muchas gracias'
+            comment:'Luego de años tratando de vender tierras en los campos de hielo Norte, Marcela y Gloria lograron hacer la venta en forma muy ágil, desarrollo la documentación respectiva con total éxito.'
         },{
             id: 3,
             img:"images/perfilfemale.png",
@@ -63,6 +63,6 @@ export const cardComments = {
 
 export const ContactInformation = {
     address: 'La Llavería 1894, Vitacura.',
-    phone:'+56 9 5046 9097',
-    email:'mf.laspataguas@gmail.com / gq.laspataguas@gmail.com',
+    phone:'+569 66784682/ +569 93286079',
+    email:'mferrada@propiedadeslaspataguas.cl / gquiero@propiedadeslaspataguas.cl',
 }
