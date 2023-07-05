@@ -12,6 +12,7 @@ form.addEventListener('submit', function (e) {
     let fullName = document.getElementById('nombre');
     let email = document.getElementById('email');
     let address = document.getElementById('address');
+    let phone  = document.getElementById('phone');
 
     let selectOperation = document.getElementById('operationType');
     let selectProperty = document.getElementById('typeOfProperty');
@@ -19,7 +20,7 @@ form.addEventListener('submit', function (e) {
     let comuna = document.getElementById('communeText');
 
     if (selectOperation.value === '0' || selectProperty.value === '0' || selectRegion.value === '0' || comuna.value === '' ||
-        fullName.value === '' || email.value === '' || address.value === '' ) {
+        fullName.value === '' || email.value === '' || address.value === '' || phone.value === '') {
             respuestaError.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size:13px;">
           Los campos no deben estar vacios.
          <button type="button" class="btn-close text-end" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -41,6 +42,7 @@ form.addEventListener('submit', function (e) {
         "action": selectOperation.value,
         "fullName": fullName.value,
         "email": email.value,
+        "phone": phone.value,
         "region": selectRegion.value,
         "commune": comuna.value,
         "address": address.value,
@@ -65,6 +67,7 @@ form.addEventListener('submit', function (e) {
                 fullName.value = '';
                 email.value = '';
                 address.value = '';
+                phone.value = '',
                 selectOperation.value = '0';
                 selectProperty.value = '0';
                 selectRegion.value = '0';

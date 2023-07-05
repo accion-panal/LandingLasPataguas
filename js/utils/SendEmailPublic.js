@@ -13,8 +13,9 @@ let respuestaError = document.getElementById('respuesta_error');
 
 let fullName = document.getElementById('nombre');
 let email = document.getElementById('email');
-let address = document.getElementById('address');
+let phone  = document.getElementById('phone');
 
+let address = document.getElementById('address');
 
 let selectOperation = document.getElementById('operationType');
 let selectProperty = document.getElementById('typeOfProperty');
@@ -23,7 +24,7 @@ let comuna = document.getElementById('communeText');
 
 
 if (selectOperation.value === '0' || selectProperty.value === '0' || selectRegion.value === '0' || comuna.value === '' ||
-fullName.value === '' || email.value === '' || address.value === '') {
+fullName.value === '' || email.value === '' || address.value === '' || phone.value === '') {
   respuestaError.innerHTML = `<div class="alert alert-danger" role="alert" style="font-size:13px;">
   Los campos no deben estar vacios.
  <button type="button" class="btn-close text-end" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -34,6 +35,7 @@ fullName.value === '' || email.value === '' || address.value === '') {
 
 return;
 }
+
 
 
 fetch(`https://formsubmit.co/ajax/${realtorMail}`, {
@@ -47,6 +49,7 @@ fetch(`https://formsubmit.co/ajax/${realtorMail}`, {
     tipo_operacion:selectOperation.value,
     Nombre_apellido: fullName.value,
     Correo : email.value,
+    Número : phone.value,
     Region:selectRegion.value,
     Comuna:comuna.value,
     Dirección:address.value,
