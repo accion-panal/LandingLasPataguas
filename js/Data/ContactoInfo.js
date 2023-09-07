@@ -8,7 +8,6 @@ const loadInformation = () => {
         <ul class="links list-unstyled">
             <li><span><i class='bx bx-envelope fs-6'></i><a href="#" style="text-decoration: none;"> ${ContactInformation.email}</a></span></li>
             <li><span><i class='bx bx-phone-call fs-5' ></i><a href="#" style="text-decoration: none;">${ContactInformation.phone} </a></span></li>
-            <li><span><i class='bx bx-map fs-5' ></i><a href="#" style="text-decoration: none;"> ${ContactInformation.address}</a></span></li>
         </ul>`
     }
     
